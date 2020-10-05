@@ -6,7 +6,7 @@ const AuthorDetail = props => {
   const authorName = `${author.first_name} ${author.last_name}`;
 
   const books = author.books.map(book => (
-    <BookRow book={book} key={book.title} authorName={authorName} />
+    <BookRow book={book} key={book.title + book.id} authorName={authorName} />
   ));
 
   return (

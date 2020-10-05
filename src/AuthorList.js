@@ -16,7 +16,7 @@ const AuthorList = props => {
   );
   const authorCards = filteredAuthors.map(author => (
     <AuthorCard
-      key={author.first_name + author.last_name}
+      key={author.first_name + author.last_name + author.id}
       author={author}
       selectAuthor={props.selectAuthor}
     />
